@@ -1,2 +1,2 @@
 # Logica-JS
- Lógica de programação em JavaScript aprendida no proa
+Projetos realizados em JS para o proa, com conceitos básicos de lógica de programação.
