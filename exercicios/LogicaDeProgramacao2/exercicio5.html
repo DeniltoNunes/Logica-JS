@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Exercicio 5</title>
+</head>
+
+<body>
+
+    <!--5. Faça um programa que leia dois valores informados pelo usuário e exiba uma das três mensagens a seguir: ‘Números
+    iguais’, caso os números sejam iguais ‘Primeiro é maior’, caso o primeiro seja maior que o segundo; ‘Segundo maior’,
+    caso o segundo seja maior que o primeiro.-->
+    <script>
+        var a = Number(prompt("Informe dois números e lhe direi qual o maior.\nPrimeiro número:"));
+        var b = Number(prompt("Segundo número:"));
+
+        if (a == b) {
+            var diga = ("Números iguais")
+        } else if (a > b){
+            var diga = ("Primeiro é maior")
+        } else if (b >a){
+            var diga = ("Segundo é maior")
+        } else {
+            var diga = ("Um dos valores não é um número")
+        }
+        document.write(diga);
+    </script>
+</body>
+
+</html>
