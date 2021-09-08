@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Exercicio 6</title>
+</head>
+
+<body>
+
+    <!-- 6. Faça um programa que leia 10 valores informados pelo usuário, calcule, exiba os números informados e escreva a
+    média aritmética desses valores lidos. -->
+
+    <script>
+        let contador = 1;
+        let valoresInseridos = ""
+        let total = 0
+        while (contador <= 10){
+            let numero = Number(prompt("Ola " + contador));
+            valoresInseridos = valoresInseridos+(`  ${numero}`);
+            total += numero;
+            contador += 1;
+        }
+
+        document.write("Os valores inseridos foram:" + valoresInseridos + "<br>A media foi: " + (total / 10));
+    </script>
+</body>
+
+</html>
