@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 10</title>
+</head>
+
+<body>
+
+    <!-- 10. Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números
+    forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você
+    passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente" -->
+
+    <script>
+        let contador = 1;
+        let total = 0
+        let ins = 0
+        while (contador <= 4) {
+            let numero = Number(prompt("Digite o " + contador + "º valor"));
+            contador += 1;
+            if (numero >= 0 && numero <= 10) {
+                total += numero;
+                ins += 1;
+            }
+        }
+
+        let med = (total / ins)
+
+        if (med >= 5) {
+            document.write("Você passou no teste")
+        } else {
+            document.write("Tente novamente")
+        }
+    </script>
+</body>
+
+</html>
