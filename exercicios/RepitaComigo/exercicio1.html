@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 1</title>
+</head>
+
+<body>
+
+    <!-- 1 - Escreva um algoritmo para ler 2 valores informados pelo usuário e se o segundo valor informado for ZERO, deve
+    ser lido um novo valor, ou seja, para o segundo valor não pode ser aceito o valor zero nem negativo e imprimir o
+    resultado da divisão do primeiro valor lido pelo segundo valor lido. -->
+
+    <script>
+        let contador = 1;
+        let valor = 0;
+        let numero = 0;
+        while (contador < 3) {
+            numero = Number(prompt("Insira o " + contador + "º valor para a divisão:"));
+            if (contador == 1) {
+                valor += numero;
+            }
+            contador += 1;
+        }
+
+        while (numero <= 0) {
+            numero = Number(prompt("Valor inválido!\nOBS: O valor não pode ser zero nem negativo.\nInsira um novo valor:"));
+        }
+
+        let resultado = (valor / numero)
+
+        document.write("O resultado da divisão é: " + resultado.toFixed(2))
+    </script>
+</body>
+
+</html>
