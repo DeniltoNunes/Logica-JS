@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 1</title>
+</head>
+
+<body>
+
+    <!-- Você sabe quantos anos seu cachorro tem em anos humanos, mas e quanto aos anos de cachorro?
+    E se fosse uma baleia?
+    E se fosse um canguru?
+
+    Vamos calcular?
+
+    Vamos começar com uma pesquisa.
+    - Pesquise diferente animais e sua relação de idade com seres humanos.
+
+    Agora, escreva uma função chamada calcularIdadePet que:
+    - Tem dois argumentos: a idade do seu cachorro e a taxa de conversão que será calculada.
+    - Calcula a idade do seu pet com base na taxa de conversão (1 ano humano equivale a 7 anos de cachorro, por
+    exemplo).
+    - Exiba o resultado na tela com a mensagem: "Seu pet tem X anos em anos humanos!"
+
+    Chame a função três vezes com diferentes conjuntos de valores. -->
+
+    <script>
+
+        function calcularIdadePet() {
+            anos = Number(prompt("Insira quantos anos humanos seu pet tem:"));
+            meses = Number(prompt("Insira quantos meses humanos seu pet tem:"));
+            mesesreal = (anos * 12);
+            anoreal = (mesesreal + meses) / 12;
+            cachorro = (anoreal * 7)
+
+            document.write("Seu cachorro teria tipo " + cachorro.toFixed(2) + " anos se fosse um humano.</br>");
+        }
+
+        calcularIdadePet()
+        calcularIdadePet()
+        calcularIdadePet()
+    </script>
+</body>
+
+</html>
