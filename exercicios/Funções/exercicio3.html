@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 3</title>
+</head>
+
+<body>
+
+    <!-- Você já se perguntou quanto custa um "suprimento vitalício" da sua comida favorita? 
+    Não se pergunte mais!
+    
+    Escreva uma função chamada calcularMeuLanche que:
+    - aceita 2 argumentos: "idade", "quantidade de lanches por dia".
+    - calcula a quantidade consumida para o resto da vida (com base em uma idade máxima constante).
+    - exibe o resultado na tela da seguinte forma: "Você precisará de NN para durar até a idade X"
+
+    Chame essa função três vezes, passando valores diferentes a cada vez. -->
+
+    <script>
+
+        function calcularMeuLanche() {
+            idade = Number(prompt("Insira a sua idade:"));
+            lanches = Number(prompt("Quantos lanches você come por dia:"));
+            idadeReal = (80 - idade)
+            lanchesReal = (idadeReal * 365.25 * lanches)
+            document.write("Você precisará de " + lanchesReal + " para viver até os 80 anos.<br>");
+        }
+
+        calcularMeuLanche()
+        calcularMeuLanche()
+        calcularMeuLanche()
+    </script>
+</body>
+
+</html>

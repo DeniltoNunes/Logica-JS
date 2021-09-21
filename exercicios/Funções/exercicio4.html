@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 4</title>
+</head>
+
+<body>
+
+    <!-- Crie 2 funções que calculam propriedades de um círculo. 
+    Sabe as fórmulas? Vamos pesquisar? 
+
+    Crie uma função chamada calcularCircunferencia:
+    - Passe o raio para a função como argumento.
+    - Calcule a circunferência com base no raio e gere "A circunferência é X".
+
+    Crie uma função chamada calcularArea:
+    - Passe o raio para a função como argumento.
+    - Calcule a área com base no raio e gere "A área é Y".
+
+    Escreva os resultados em tela. 
+
+    Chame cada uma  das funções três vezes com diferentes conjuntos de valores. -->
+
+    <script>
+
+        function calcularCircunferencia() {
+            raio = Number(prompt("Insira o raio do círculo:"));
+            circunferencia = (2 * Math.PI * raio);
+            document.write("A circunferencia do circulo é: " + circunferencia.toFixed(2) + "<br>");
+        }
+        function calcularArea() {
+            area = Math.PI * Math.pow(raio, 2);
+            document.write("A area do circulo é: " + area.toFixed(2) + "<br>");
+        }
+
+        calcularCircunferencia()
+        calcularArea()
+        calcularCircunferencia()
+        calcularArea()
+        calcularCircunferencia()
+        calcularArea()
+    </script>
+</body>
+
+</html>
