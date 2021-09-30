@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+
+<body>
+    <script>
+        alert('Por favor me informe três números e lhe direi qual o maior deles\nOBS: Numeros repetidos serão desconsiderados!')
+        let a = Number(prompt('Primeiro número:'));
+        let b = Number(prompt('Segundo número:'));
+        let c = Number(prompt('Terceiro número'));
+
+        switch (true) {
+            default:
+                alert('Um dos valores inseridos não é um número, tente novamente.')
+                break;
+            case (a == b && a == c):
+                alert('Todos os valores são iguais.');
+                break;
+            case (a === b):
+                alert('Detectado repetição do primeiro e segundo valor.\nO maior número é: ' + c);
+                break;
+            case (a === c):
+                alert('Detectado repetição do primeiro e terceiro valor.\nO maior número é: ' + b);
+                break;
+            case (b === c):
+                alert('Detectado repetição do segundo e terceiro valor.\nO maior número é: ' + a);
+                break;
+            case (a > b && a > c):
+                alert('O maior número é: ' + a);
+                break;
+            case (b > a && b > c):
+                alert('O maior número é: ' + b);
+                break;
+            case (c > a && c > b):
+                alert('O maior número é: ' + c);
+                break;
+        }
+
+    </script>
+</body>
+
+</html>
