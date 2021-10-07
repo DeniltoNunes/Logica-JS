@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+</head>
+
+<body>
+    <script>
+        alert('Seja bem vindo!😃');
+
+        var numeros = [];
+        var impressao = [];
+        var contador = 1;
+
+        while (contador <= 10) {
+            let valor = parseInt(prompt('Informe o ' + contador + 'º valor:'));
+            var letra = isNaN(valor);
+            while (valor < 0 || letra == true) {
+                valor = parseInt(prompt("Valor inválido. \nInforma um valor positivo maior que zero."));
+                letra = isNaN(valor);
+            }
+            contador += 1;
+            var adicionar = numeros.push(valor);
+            var adicionar1 = impressao.push('\n' + valor);
+        }
+
+        alert('Os números informados foram:' + impressao);
+        let total = numeros.reduce((total, currentElement) => total + currentElement);
+        let media = total / 10;
+
+        alert('A média é: ' + media);
+    </script>
+</body>
+
+</html>
