@@ -17,10 +17,10 @@
         var contador = 1;
 
         while (contador <= 10) {
-            let valor = parseInt(prompt('Informe o ' + contador + 'º valor:'));
+            let valor = parseInt(prompt('Informe o ' + contador + 'º número:'));
             var letra = isNaN(valor);
-            while (valor < 0 || letra == true) {
-                valor = parseInt(prompt("Valor inválido. \nInforma um valor positivo maior que zero."));
+            while (letra == true) {
+                valor = parseInt(prompt('Valor inválido. \nInforme o ' + contador + 'º número:'));
                 letra = isNaN(valor);
             }
             contador += 1;
