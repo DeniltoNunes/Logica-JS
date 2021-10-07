@@ -11,12 +11,12 @@
 <body>
     <script>
         alert('Seja bem vindo!😃');
-        let valor = parseInt(prompt("Informa um valor positivo maior que zero."));
+        let valor = parseInt(prompt("Informe um valor positivo maior que zero:"));
         var contador = 1;
         var letra = isNaN(valor);
 
         while (valor < 0 || letra == true) {
-            valor = parseInt(prompt("Valor inválido. \nInforma um valor positivo maior que zero."));
+            valor = parseInt(prompt("Valor inválido. \nInforme um valor positivo maior que zero:"));
             letra = isNaN(valor);
         }
 
