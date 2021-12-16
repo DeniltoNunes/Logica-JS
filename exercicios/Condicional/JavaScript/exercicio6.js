@@ -1,4 +1,3 @@
-alert('Seja bem vindo!😃');
 alert('Informe 10 números e lhe direi quais foram e a média aritmética deles.');
 
 let numeros = [];

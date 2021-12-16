@@ -1,8 +1,17 @@
-var valor = 0
+let valor = 0
 let contador = 1;
+
 while (contador <= 10) {
-    var numero = Number(prompt("Insira o valor " + contador + ":"));
+    let numero = Number(prompt("Insira o " + contador + "º número:"));
+    letra = isNaN(numero)
+
+    while (letra == true) {
+        numero = parseInt(prompt("Valor inválido. \nInsira o " + contador + "º número:"));
+        letra = isNaN(numero);
+    }
+
     valor += numero
     contador += 1;
 }
-document.write("A soma de todos os valores \u00e9: " + valor);
+
+alert("A soma de todos os números é: " + valor);
