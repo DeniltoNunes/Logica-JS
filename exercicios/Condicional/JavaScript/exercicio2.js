@@ -1,13 +1,19 @@
-var a = Number(prompt("Informe um número, e lhe direi se o valor é positivo, negativo ou zero."));
+let a = Number(prompt("Informe um número, e lhe direi se o valor é positivo, negativo ou zero."));
+let diga = ''
 
-if (a > 0) {
-    var diga = ("O número " + a + " é positivo.")
-} else if (a < 0) {
-    var diga = ("O número " + a + " é negativo.")
-} else if (a == 0) {
-    var diga = ("O número é zero.")
-} else {
-    var diga = ("O valor não é um número.")
+switch (true) {
+    case (a > 0):
+        diga = ("O número " + a + " é positivo.");
+        break;
+    case (a < 0):
+        diga = ("O número " + a + " é negativo.");
+        break;
+    case (a == 0):
+        diga = ("O número é zero.");
+        break;
+    default:
+        diga = ("O valor não é um número.");
+        break;
 }
 
-document.write(diga);
+alert(diga);
